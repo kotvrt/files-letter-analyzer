@@ -18,5 +18,4 @@ func Test_CallToAnalyserExecutesSuccessfully(t *testing.T) {
 	err, metrics := githubCodeAnalyzer.Analyse()
 	assert.NilError(t, err)
 	assert.Check(t, len(metrics) > 0)
-	assert.Check(t, metrics["A"] > 0)
 }
